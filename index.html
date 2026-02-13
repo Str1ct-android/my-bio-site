@@ -6,7 +6,7 @@
                 <title>STR@CT</title>
                 <meta name='description' content='razrab'>
                 <style>
-                    :root { --primary: #00FF83; --secondary: #5900FF; --radius: 34.6%; }
+                    :root { --primary: #000000; --secondary: #FFFFFF; --radius: 34.6%; }
                     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
                     body { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #000; color: #fff; height: 100vh; overflow: hidden; display: flex; align-items: center; justify-content: center; }
                     #glCanvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
@@ -66,7 +66,7 @@
                         </div>
                         <div class="github-widget">
     <p class="widget-title">Contributions</p>
-    <img src="https://ghchart.rshah.org/5900FF/Str1ct-android" alt="Github Chart" />
+    <img src="https://ghchart.rshah.org/FFFFFF/Str1ct-android" alt="Github Chart" />
 </div>
                         <div class="links-area"></div>
                     </div>
@@ -154,9 +154,9 @@ if (!vertexShader || !fragmentShader) {
         gl.uniform2f(uRes, canvas.width, canvas.height);
         gl.uniform1f(uTime, time);
         gl.uniform1f(uSpeed, 2.17);
-        gl.uniform1f(uZoom, 3.07);
-        gl.uniform4f(uCol1, 0.000, 1.000, 0.514, 1.0);
-        gl.uniform4f(uCol2, 0.349, 0.000, 1.000, 1.0);
+        gl.uniform1f(uZoom, 0.96);
+        gl.uniform4f(uCol1, 0.000, 0.000, 0.000, 1.0);
+        gl.uniform4f(uCol2, 1.000, 1.000, 1.000, 1.0);
         gl.drawArrays(gl.TRIANGLES, 0, 6);
         requestAnimationFrame(render);
     }
